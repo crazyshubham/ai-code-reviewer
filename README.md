@@ -27,7 +27,7 @@ Every comment includes a self-rated confidence score (0–100%). Low-confidence 
 
 ## 🖥️ Live Demo
 
-🔗 [https://crazyshubham-ai-code-reviewer.streamlit.app](https://crazyshubham-ai-code-reviewer.streamlit.app)
+🔗 [https://crazyshubham-ai-code-reviewer.streamlit.app](https://ai-code-reviewer-igcatnygotnykcdksnkmne.streamlit.app)
 
 ---
 
