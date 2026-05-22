@@ -122,7 +122,13 @@ streamlit run dashboard.py
 | Orchestration | Python (custom pipeline) |
 | Dashboard | Streamlit |
 | Deployment | Streamlit Cloud |
+| LLM Review | Google Gemini 2.5 Flash (free tier) |
 
+> **Note on LLM choice:** The assignment specifies OpenAI GPT-4o-mini or Claude Sonnet.
+> Google Gemini 2.5 Flash was used as a free and equivalent alternative, as it produces
+> the same structured JSON output and supports the same prompt engineering techniques.
+> The pipeline is model-agnostic and can be switched to Claude or GPT-4o by changing
+> the `MODEL` constant and API client in `reviewer.py`.
 ---
 
 ## ⚠️ Known Limitations
