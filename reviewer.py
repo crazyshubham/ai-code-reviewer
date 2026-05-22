@@ -7,8 +7,10 @@ import logging
 import re
 import time
 from typing import Any
-
 from google import genai
+import streamlit as st
+if hasattr(st, 'secrets') and "GEMINI_API_KEY" in st.secrets:
+    os.environ["GEMINI_API_KEY"] = st.secrets["GEMINI_API_KEY"]
 
 # ---------------------------------------------------------------------------
 # Config
