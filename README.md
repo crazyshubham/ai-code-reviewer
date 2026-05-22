@@ -2,8 +2,13 @@
 
 > Autonomous · AST-Powered · Confidence-Rated
 
-![Dashboard Screenshot](screenshots/dashboard.png)
+## 📸 Screenshots
 
+![Dashboard](screenshots/1.png)
+
+![Reviews](screenshots/2.png)
+
+![Demo](screenshots/3.png)
 ---
 
 ## 📌 Project Overview
