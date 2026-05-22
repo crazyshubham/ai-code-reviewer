@@ -448,8 +448,10 @@ if st.session_state.results:
 
     # ── Sidebar filters ──────────────────────
     with st.sidebar:
-        st.markdown("### 🎛 Filters")
-        st.markdown("---")
+    api_key = st.text_input("Gemini API Key", type="password")
+    if api_key:
+        os.environ["GEMINI_API_KEY"] = api_key
+    st.markdown("### 🎛 Filters")
 
         all_cats = sorted(set(r["category"] for r in reviews_all))
         sel_cats = st.multiselect("Category", all_cats, default=all_cats)
