@@ -448,22 +448,22 @@ if st.session_state.results:
 
     # ── Sidebar filters ──────────────────────
     with st.sidebar:
-    api_key = st.text_input("Gemini API Key", type="password")
-    if api_key:
-        os.environ["GEMINI_API_KEY"] = api_key
-    st.markdown("### 🎛 Filters")
+            api_key = st.text_input("Gemini API Key", type="password")
+            if api_key:
+                os.environ["GEMINI_API_KEY"] = api_key
+            st.markdown("### 🎛 Filters")
 
-        all_cats = sorted(set(r["category"] for r in reviews_all))
-        sel_cats = st.multiselect("Category", all_cats, default=all_cats)
-
-        all_sevs = ["high", "medium", "low"]
-        sel_sevs = st.multiselect("Severity", all_sevs, default=all_sevs)
-
-        st.markdown("---")
-        only_verify = st.checkbox("Show only ⚠️ Verify items", value=False)
-
-        st.markdown("---")
-        st.markdown(f"<div style='font-size:0.72rem; color:#6b7a99;'>Repo<br><span style='color:#7b9cff; word-break:break-all;'>{st.session_state.repo_analyzed}</span></div>", unsafe_allow_html=True)
+            all_cats = sorted(set(r["category"] for r in reviews_all))
+            sel_cats = st.multiselect("Category", all_cats, default=all_cats)
+    
+            all_sevs = ["high", "medium", "low"]
+            sel_sevs = st.multiselect("Severity", all_sevs, default=all_sevs)
+    
+            st.markdown("---")
+            only_verify = st.checkbox("Show only ⚠️ Verify items", value=False)
+    
+            st.markdown("---")
+            st.markdown(f"<div style='font-size:0.72rem; color:#6b7a99;'>Repo<br><span style='color:#7b9cff; word-break:break-all;'>{st.session_state.repo_analyzed}</span></div>", unsafe_allow_html=True)
 
     # ── Apply filters ────────────────────────
     reviews = [
